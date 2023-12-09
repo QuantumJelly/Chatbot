@@ -1,0 +1,126 @@
+.desktop-chat-dialog {
+  position: fixed;
+  right: 5%;
+  bottom: 8%;
+  width: 400px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.mobile-chat-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 10px;
+  color: white;
+  background-color: purple;
+  position: relative;
+}
+
+.welcome-header {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 12px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.welcome-close {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  cursor: pointer;
+}
+
+.welcome-message {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.chat-history {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.message-user,
+.message-bot {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.message-user {
+  flex-direction: row-reverse;
+}
+
+.message-content {
+  margin: 0 12px;
+  max-width: 70%;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  padding: 12px;
+  text-align: justify;
+  line-height: 18px;
+}
+
+.message-user .message-content {
+  background-color: lightgreen;
+}
+
+.chat-input-wrapper {
+  background-color: #f2f2f2;
+  padding: 12px 12px 24px;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.chat-input input {
+  flex: 1;
+}
+
+.quick-replies {
+  display: flex;
+  overflow-x: auto;
+}
+
+.quick-replies span {
+  cursor: pointer;
+  padding: 3px;
+  margin: 6px;
+  background-color: #f2f2f2;
+  ;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+.quick-replies span:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
