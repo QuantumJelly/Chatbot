@@ -2,6 +2,10 @@
 
 This is a ChatBot Demo Project
 
+## Project
+### my-chatbot-app (Front-end) - finished
+### my-chatbot-backend (Back-end) - ready to start
+
 ## Available Scripts
 
 In the project directory, you can run:
